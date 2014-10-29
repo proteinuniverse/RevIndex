@@ -1,0 +1,8 @@
+#!/bin/bash
+#  1) source ~/accumulo-env.sh
+#  2) change user and pword to appropriate values
+
+STDARGS="-u user -p pword -i accumulo -z accum2"
+
+$ACCUMULO_HOME/bin/tool.sh target/RevIndex-1.0-SNAPSHOT.jar SDFdemo.mrRevInd $STDARGS -t $1 -rt $2 -rf $3 -bf $4 -nr 10
+     
